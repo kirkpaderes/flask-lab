@@ -13,7 +13,7 @@ def view_hello():
 
 @app.route('/demo-1')
 def view_demo_1():
-    return render_template('demo-1.html', name='Justin')
+    return render_template('demo-1.html', name='Kirk Poo Poo')
 
 @app.route('/demo-2/<name>')
 def view_demo_2(name):
@@ -21,8 +21,8 @@ def view_demo_2(name):
 
 @app.route('/demo-3')
 def view_demo_3():
-    names = ['Alice', 'Bob', 'Charlie']
-    return render_template('demo-3.html', salutation='Roll call', names=names)
+    names = ['Bill', 'Elon', 'Kirk', 'Mark']
+    return render_template('demo-3.html', salutation='Welcome to the Facebook', names=names)
 
 # STUDENT DIRECTORY APP
 
