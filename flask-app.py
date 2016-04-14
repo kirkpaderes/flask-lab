@@ -53,7 +53,7 @@ def get_data():
 
 @app.route('/directory')
 def view_directory():
-    return 'FIXME'
+    return render_template('directory.html', students=get_data())
 
 @app.route('/directory/<username>')
 def view_student(username):
